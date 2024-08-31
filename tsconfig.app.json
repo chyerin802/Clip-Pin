@@ -15,6 +15,13 @@
 		"jsx": "react-jsx",
 		"sourceMap": true,
 
+		/* Path */
+		"baseUrl": "./",
+		"paths": {
+			"@components/*": ["src/components/*"],
+			"@assets/*": ["src/assets/*"]
+		},
+
 		/* Linting */
 		"strict": true,
 		"noUnusedLocals": true,
