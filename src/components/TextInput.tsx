@@ -8,7 +8,7 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 	onReset?: () => void;
 }
 
-const TextInput: React.FC<InputProps> = ({
+const TextInput = ({
 	type,
 	value,
 	label,
@@ -16,7 +16,7 @@ const TextInput: React.FC<InputProps> = ({
 	error,
 	onReset,
 	...props
-}) => {
+}: InputProps) => {
 	const [newType, setNewType] = useState(type);
 
 	return (
