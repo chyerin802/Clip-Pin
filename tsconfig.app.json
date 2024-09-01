@@ -18,8 +18,9 @@
 		/* Path */
 		"baseUrl": "./",
 		"paths": {
+			"@assets/*": ["src/assets/*"],
 			"@components/*": ["src/components/*"],
-			"@assets/*": ["src/assets/*"]
+			"@hooks/*": ["src/hooks/*"]
 		},
 
 		/* Linting */
