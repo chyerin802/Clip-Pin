@@ -8,7 +8,7 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 	onReset?: () => void;
 }
 
-const Input: React.FC<InputProps> = ({
+const TextInput: React.FC<InputProps> = ({
 	type,
 	value,
 	label,
@@ -33,6 +33,7 @@ const Input: React.FC<InputProps> = ({
 				<input
 					id={id}
 					type={newType}
+					value={value}
 					{...props}
 					className={`block w-full rounded-xl py-3 pl-4 pr-16 text-lg leading-7 text-neutral-primary shadow-sm placeholder:text-neutral-secondary focus:border-brand-secondary focus:ring-2 focus:ring-brand-secondary focus:ring-opacity-50 sm:text-sm sm:leading-6 ${
 						error
@@ -84,4 +85,4 @@ const Input: React.FC<InputProps> = ({
 	);
 };
 
-export default Input;
+export default TextInput;
